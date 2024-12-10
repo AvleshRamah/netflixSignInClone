@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Geist+Mono:wght@100..900&family=League+Spartan:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(22, 22, 22) ;
+    color: white;
+    font-family: "League Spartan", serif;
+}
+
+#main{
+    /*border: 1px solid red;*/
+    /*max-width: 1200px;*/
+    height: 110vh;
+    /*height: 1125px;*/
+    margin: 0 auto;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(image/MY-en-20241202-TRIFECTA-perspective_42e6f721-8121-4b73-b775-eec47e8ab528_medium.jpg);
+    /*background-image: url(image/MY-en-20241202-TRIFECTA-perspective_42e6f721-8121-4b73-b775-eec47e8ab528_medium.jpg);*/
+    /*filter: brightness(0.5);*/
+    background-size: cover;
+    background-position: top 0 left 0;
+}
+
+.netflix{
+    max-width: 1000px;
+    /*border: 1px solid red;*/
+    /*margin-top: 10px;*/
+    height: 100px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.default-ltr-cache-1d568uk {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentcolor;
+    display: block;
+}
+
+#main .signin{
+    /*border: 1px solid red;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    /*height: 60%;*/
+}
+
+#main .signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main .signin .form{
+    max-width: 450px;
+    width: 100%;
+    /*border: 1px solid blue;*/
+    padding: 35px;
+    /*background-color: rgb(22, 22, 22);*/
+    background-color: black;
+    opacity: 0.65;
+    margin-top: 0;
+}
+
+#main .signin .form h2{
+    font-weight: 700;
+}
+
+#main .signin .form p{
+    text-align: center;
+    padding-top: 15px;
+    padding-block-end: 13px;
+    color: gray;
+}
+
+#main .signin .form .inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#main .signin .form .inputbox input{
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border-color: gray;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 20px 10px;
+    color: gray;
+}
+
+.signinbutton,
+.usecodebutton{
+    width: 100%;
+    height: 40px;
+    /*background-color: rgb(229, 9, 20);*/
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.signinbutton:hover{
+    opacity: 0.75;
+}
+
+.usecodebutton:hover{
+    background-color: gray;
+}
+
+.usecodebutton{
+    background-color: rgb(76, 75, 75);
+}
+
+.forgot{
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#main .signin .form .remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label{
+    font-weight: 600;
+}
+
+#main .signin .form p.newto{
+    text-align: start;
+    color: white;
+    margin-top: 5px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#main .signin .form p.additional{
+    text-align: start;
+    line-height: 1.2;
+}
+
+
+footer{
+    height: 200px;
+    background-color: rgb(22, 22, 22);
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.col{
+    /*border: 1px solid blue;*/
+    padding: 10px;
+}
+
+.col p{
+    padding: 10px;
+    text-decoration: underline;
+    color: gray;
+}
+
+select{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 4px;
+}
+
+.container .col .not-underline{
+    text-decoration: none;
+}
+
+.mobile{
+    max-width: 400px;
+    /*border: 1px solid blue;*/
+    margin: 0 auto;
+}
+
+.mobile .not-underline{
+    color: gray;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.mobilecols{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobilecol p{
+    padding: 10px;
+    text-decoration: underline;
+    color: gray;
+}
+
+.mobile select{
+    margin-left: 25px;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width:600px){
+    .mobile{
+        display: block;
+    }
+
+    .container{
+        display: none;
+    }
+
+    #main{
+        background-color: black;
+        background-image: none;
+        height: auto !important;
+    }
+}
